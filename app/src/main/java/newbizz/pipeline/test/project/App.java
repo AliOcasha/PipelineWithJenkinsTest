@@ -5,7 +5,7 @@ package newbizz.pipeline.test.project;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello World in master!";
     }
 
     public static void main(String[] args) {
