@@ -4,8 +4,16 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+	        sh 'echo "Build-Stage"'
+                sh './gradlew --version'
+		sh './gradlew build'
             }
         }
+	stage('test') {
+	    steps {
+	    sh 'echo "Test-Stage'
+	    sh './gradlew test'
+	    }
+	}
     }
 }
